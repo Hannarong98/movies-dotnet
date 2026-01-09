@@ -9,7 +9,7 @@ var config = builder.Configuration;
 
 builder.Services.AddAuth(config);
 
-builder.Services.AddOpenApiWithSecuritySchemes();
+builder.Services.AddOpenApiWithSecuritySchemes(config);
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();

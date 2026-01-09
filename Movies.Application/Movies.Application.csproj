@@ -1,16 +1,17 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
-        <TargetFramework>net9.0</TargetFramework>
+        <TargetFramework>net10.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
+        <UserSecretsId>b175bf40-a171-4263-84c0-02ef493a0b32</UserSecretsId>
     </PropertyGroup>
     <ItemGroup>
         <PackageReference Include="Dapper" Version="2.1.66"/>
-        <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="12.0.0"/>
-        <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="9.0.10"/>
-        <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.10"/>
-        <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="9.0.10"/>
-        <PackageReference Include="Npgsql" Version="9.0.4"/>
-        <PackageReference Include="Scalar.AspNetCore" Version="2.9.0"/>
+        <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="12.1.1" />
+        <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="10.0.1" />
+        <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.1" />
+        <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="10.0.1" />
+        <PackageReference Include="Npgsql" Version="10.0.1" />
+        <PackageReference Include="Scalar.AspNetCore" Version="2.12.4" />
     </ItemGroup>
 </Project>

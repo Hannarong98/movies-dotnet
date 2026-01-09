@@ -14,7 +14,7 @@ public static class WebApplicationExtensions
             options.WithTitle("Movies API")
                 .SortTagsAlphabetically()
                 .SortOperationsByMethod()
-                .AddPreferredSecuritySchemes(["OAuth2"])
+                .AddPreferredSecuritySchemes("OAuth2")
                 .AddAuthorizationCodeFlow("OAuth2", flow =>
                 {
                     flow.ClientId = configuration["Scalar:ClientId"]!;
