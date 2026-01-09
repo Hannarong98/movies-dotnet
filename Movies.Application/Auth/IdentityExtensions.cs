@@ -4,10 +4,13 @@ namespace Movies.Application.Auth;
 
 public static class IdentityExtensions
 {
-    public static Guid? GetUserId(this HttpContext context)
+    extension(HttpContext context)
     {
-        var subject = context.User.Claims.SingleOrDefault(x => x.Type == "sub");
+        public Guid? GetUserId()
+        {
+            var subject = context.User.Claims.SingleOrDefault(x => x.Type == "sub");
 
-        return Guid.TryParse(subject?.Value, out var userId) ? userId : null;
+            return Guid.TryParse(subject?.Value, out var userId) ? userId : null;
+        }
     }
 }
