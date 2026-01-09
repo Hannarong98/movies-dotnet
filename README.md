@@ -1,6 +1,6 @@
 # Movies.Api - RESTful Movie Management API
 
-A simple and modern RESTful API for managing movies and ratings built with .NET 9, PostgreSQL, and Keycloak authentication.
+A simple and modern RESTful API for managing movies and ratings built with .NET 10, PostgreSQL, and Keycloak authentication.
 
 ## Table of Contents
 - [Tech Stack](#tech-stack)
@@ -15,7 +15,7 @@ A simple and modern RESTful API for managing movies and ratings built with .NET 
 
 ## Tech Stack
 
-- **.NET 9.0** - 10 stable version was not available when this project started
+- **.NET 10.0**
 - **PostgreSQL 18** - Primary database with Npgsql provider
 - **Dapper** - Lightweight ORM for data access
 - **Keycloak 26.4** - OAuth2/OIDC authentication and authorization
@@ -86,7 +86,7 @@ Movies.Contracts/        # Contract Layer
 ## Getting Started
 
 ### Prerequisites
-- .NET 9.0 SDK
+- .NET 10.0 SDK
 - Docker & Docker Compose
 - PostgreSQL client (optional, for manual database access)
 
